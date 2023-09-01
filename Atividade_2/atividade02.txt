@@ -1,0 +1,86 @@
+1-  Tipagem Estática: Nesse caso, o tipo de uma variável é determinado em tempo de compilação e não pode ser alterado durante a execução do programa. 
+    Linguagens como Java e C# são exemplos de linguagens de tipagem estática.
+
+    Tipagem Dinâmica: Aqui, o tipo de uma variável é determinado em tempo de execução, permitindo maior flexibilidade. 
+    Linguagens como Python e JavaScript são exemplos de linguagens de tipagem dinâmica.
+
+2-  O principal problema associado ao uso da tipagem dinâmica é a possibilidade de erros de tipo em tempo de execução. 
+Isso ocorre porque os tipos de dados são verificados apenas durante a execução do programa e não durante a compilação.
+
+3- function soma(a, b) {
+    return a + b;
+}
+
+console.log(soma(5, 10));       // Saída: 15
+console.log(soma("5", 10));     // Saída: "510"
+console.log(soma("5", "10"));   // Saída: "510"
+
+    Nesse exemplo, a função soma parece funcionar corretamente com diferentes tipos de entrada, mas a tipagem dinâmica pode levar a resultados inesperados. 
+A função aceita qualquer tipo de entrada para a e b, mesmo que isso não faça sentido em termos matemáticos. 
+Isso pode levar a erros difíceis de detectar, pois a função não faz verificações de tipo explícitas.
+
+4-  A tipagem fraca na linguagem C se refere ao fato de que as conversões entre diferentes tipos de dados podem ocorrer de maneira mais flexível, 
+muitas vezes de forma implícita, sem exigir uma intervenção explícita do programador.
+exemplo: 
+#include <stdio.h>
+
+int main() {
+    int x = 5;
+    float y = 2.5;
+    
+    int sum = x + y;  // Conversão implícita de float para int
+    
+    printf("Sum: %d\n", sum);
+    
+    return 0;
+}
+    Quando somamos x e y, ocorre uma conversão implícita do tipo float para o tipo int. Isso acontece porque o compilador C permite essa conversão, 
+mesmo que os tipos não sejam idênticos.
+    No entanto, essa conversão pode levar a resultados inesperados, já que os números decimais após a conversão são truncados.
+O valor de y (2.5) é convertido para 2 como um inteiro, e a soma de x e y resulta em 7, em vez de 7.5 como se poderia esperar.
+
+
+5-  function parseApiResponse(response: any): void {
+    // Neste caso, o tipo 'response' é desconhecido, então 'any' é usado.
+    // Aqui você pode acessar propriedades sem muita verificação de tipo.
+    
+    console.log(response.id);
+    console.log(response.name);
+    console.log(response.data);
+}
+
+const apiResponse = {
+    id: 1,
+    name: "John",
+    data: [1, 2, 3]
+};
+
+parseApiResponse(apiResponse);
+
+
+
+    Nesse exemplo, o uso do tipo "any" permite que a função parseApiResponse aceite qualquer tipo de objeto sem fazer verificações rigorosas de tipo.
+    Isso pode ser útil ao lidar com APIs que retornam estruturas de dados complexas e dinâmicas. 
+    No entanto, o uso de "any" também traz consigo a possibilidade de erros de tipo e perda de vantagens de tipagem estática.
+
+
+6-  O TypeScript tem um sistema de tipos estático que permite declarar explicitamente os tipos de variáveis e parâmetros de função. 
+    Quando se trata de números, o tipo "number" é usado para representar tanto inteiros quanto números de ponto flutuante. 
+    Isso é uma característica de tipagem flexível, não tipagem fraca.
+
+
+7-  function main() {
+  let nome: string = "Ely";
+  let time: string = "120.56";
+  let linguagem: string = "TypeScript";
+
+  console.log(nome);
+  console.log(`My payment time is ${time}`);
+  console.log("and");
+  console.log(`my preferred language is ${linguagem}`);
+}
+
+main();
+
+
+8-  

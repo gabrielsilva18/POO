@@ -1,0 +1,38 @@
+1-  Classe: Determina as propriedades (atributos) e comportamentos (métodos) que os objetos desse tipo terão. 
+    As classes fornecem o molde a partir do qual os objetos são criados(Uma classe é um tipo a partir do qual objetos são criados).
+    Objeto: É uma instância concreta de uma classe. 
+    Representa uma entidade específica com estados (valores de atributos) e comportamentos (ações realizadas pelos métodos).
+
+
+2-  Atributos: São as características de determinado objeto;
+    Métodos: São os comportamentos desse objeto;
+    Tendo como exemplo de objeto : Pessoa, os atributos poderiam ser: altura, peso, nacionalidade...; Os Métodos poderiam ser: Comprar, falar, andar e etc...
+
+
+3-  Atributo                                     Sistema em que é
+                                                    importante
+
+    Peso              ===============>            Sistema de atividades físicas
+    Tipo de CNH       ===============>            Sistemas de processo seletivo em vagas de emprego
+    Tipo Sanguíneo    ===============>            Sistema de doações de Sangue
+    Habilidade destra ===============>            Sitemas de simulação esportiva
+    Percentual de gordura  ===============>       Sistema de nutrição
+    Saldo em conta    ===============>            Sistema Bancário
+    Etinia            ===============>            Sistema de cadastro
+
+
+4-a.Sim, seria interessante;
+  b.Sim, em um sistema bancário, é bastante comum que uma pessoa possua mais de uma conta, Para representar o conjunto de contas de uma pessoa,
+    uma abordagem mais adequada poderia ser o uso de uma estrutura de dados composta, como um array ou uma lista; 
+
+
+5- Notas, Documentos, Professor, Turma, Disciplina;
+
+
+6- Objetos:              Atributos:                    Métodos:
+   Jogador          Classe, gênero, vestimentas      Correr, Logar, Enviar mensagns
+   Inimigos         Força, velocidade,...            Correr, atacar, fugir
+   Npc              Nome, função, posição            Falar, comprar, vender
+   Item             Nome, utilidade, preço           usar, vender, coletar
+   Missões          Enredo, recompensa, localização  concluir, aceitar, recusar
+   Habilidade       Como obter, função...            Usar, Obter, comprar

@@ -1,0 +1,18 @@
+1-falso - é o contrário;
+falso - depende da linguagem de progrmação utilizada!;
+falso - depende da linguagem de progrmação utilizada!;
+falso - em muitas linguagens, a variável permanece não inicializada até que uma instância da classe seja criada explicitamente e atribuída a ela;
+verdadeiro;
+verdadeiro;
+verdadeiro.
+
+
+2-  Isso não resultará em um problema de compilação, pois em TypeScript,
+as variáveis de números (number) são inicializadas automaticamente com o valor undefined se você não atribuir um valor a elas.
+
+4-O erro ocorre na linha: 
+let r : Radio = new Radio()
+e esse erro ocorre pois o contructor precisa de um parâmetro(volume), 
+que não está sendo fornecido no código a cima, solução:
+let r : Radio = new Radio(10)
+
